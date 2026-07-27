@@ -873,6 +873,41 @@ a:hover {
   margin-bottom: 0.35rem;
 }
 
+/* Instagram */
+.section-instagram {
+  background: var(--color-cream-dark);
+}
+
+.instagram-lead {
+  max-width: 560px;
+  margin: 0 auto 1.25rem;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+}
+
+.instagram-lead a {
+  color: var(--color-espresso-light);
+  font-weight: 600;
+}
+
+.instagram-follow {
+  margin-bottom: 2rem;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.instagram-grid .instagram-media {
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-width: 0 !important;
+}
+
 /* About page */
 .owner-story {
   display: grid;
@@ -1104,6 +1139,10 @@ a:hover {
 
   .card-grid--2,
   .card-grid--3 {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-grid {
     grid-template-columns: 1fr;
   }
 
